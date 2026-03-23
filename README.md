@@ -195,9 +195,9 @@ of public health and computational social science.
 
 ### Related Work from the Same Group
 
-- [Multilingual Financial Fraud Detection — IEEE CICN 2026](https://arxiv.org) — extends NLP
+- [Multilingual Financial Fraud Detection — IEEE CICN 2026](https://arxiv.org/abs/2603.11358) — extends NLP
   misinformation detection methodology to financial fraud in Bangla-English code-mixed text
-- [Continual Learning for Adaptive AI Systems — arXiv 2025](https://arxiv.org) — addresses
+- [Continual Learning for Adaptive AI Systems — arXiv 2025](https://arxiv.org/abs/2510.07648) — addresses
   model adaptation and catastrophic forgetting in production ML systems
 
 ---
@@ -221,8 +221,7 @@ If you use this dataset or code in your research, please cite:
 ```bibtex
 @article{amin2022detecting,
   title={Detecting conspiracy theory against covid-19 vaccines},
-  author={Amin, Md Hasibul and Madanu, Harika and Lavu, Sahithi
-          and Mansourifar, Hadi and Alsagheer, Dana and Shi, Weidong},
+  author={Amin, Md Hasibul and Madanu, Harika and Lavu, Sahithi and Mansourifar, Hadi and Alsagheer, Dana and Shi, Weidong},
   journal={arXiv preprint arXiv:2211.13003},
   year={2022}
 }
