@@ -1,9 +1,5 @@
 # Detecting Conspiracy Theory Against COVID-19 Vaccines
 
-> **Note:** The repository URL contains a typo (`AgaintstCovidVaccines`) 
-> inherited from the published paper citation. The URL has been preserved 
-> intentionally to maintain citation integrity.
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![arXiv](https://img.shields.io/badge/arXiv-2211.13003-b31b1b.svg)](https://arxiv.org/abs/2211.13003)
