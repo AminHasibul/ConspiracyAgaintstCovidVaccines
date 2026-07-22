@@ -84,7 +84,7 @@ Google Colab provides a pre-configured environment with most dependencies instal
 1. **Open Notebook in Colab**:
    - Navigate to [Google Colab](https://colab.research.google.com/)
    - Go to File → Open notebook → GitHub
-   - Enter: `AminHasibul/ConspiracyAgainststCovidVaccines`
+   - Enter: `AminHasibul/ConspiracyAgaintstCovidVaccines`
    - Select desired notebook
 
 2. **Run Setup Cells**:
@@ -101,8 +101,8 @@ Google Colab provides a pre-configured environment with most dependencies instal
 
 #### Step 1: Clone Repository
 ```bash
-git clone https://github.com/AminHasibul/ConspiracyAgainststCovidVaccines.git
-cd ConspiracyAgainststCovidVaccines
+git clone https://github.com/AminHasibul/ConspiracyAgaintstCovidVaccines.git
+cd ConspiracyAgaintstCovidVaccines
 ```
 
 #### Step 2: Create Virtual Environment
@@ -121,25 +121,15 @@ conda activate conspiracy-detection
 # Upgrade pip
 pip install --upgrade pip
 
-# Install TensorFlow 1.14 (critical version)
-pip install tensorflow==1.14
-
-# Install BERT serving
-pip install bert-serving-server
-pip install bert-serving-client
-
-# Install NLP and data science libraries
-pip install nltk==3.5
-pip install gensim==3.8.3
-pip install numpy==1.19.5
-pip install pandas==1.1.5
-pip install scikit-learn==0.24.2
-pip install matplotlib==3.3.4
-pip install seaborn==0.11.2
+# Install the pinned notebook environment
+pip install -r requirements.txt
 
 # Download NLTK data
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 ```
+
+`requirements.txt` pins the original notebook dependencies, including TensorFlow 1.14 and the
+`bert-as-service` packages used throughout this repository.
 
 #### Step 4: Download BERT Model
 ```bash
@@ -189,8 +179,8 @@ jupyter notebook
 #### Native Windows (Alternative)
 ```cmd
 # Clone repository
-git clone https://github.com/AminHasibul/ConspiracyAgainststCovidVaccines.git
-cd ConspiracyAgainststCovidVaccines
+git clone https://github.com/AminHasibul/ConspiracyAgaintstCovidVaccines.git
+cd ConspiracyAgaintstCovidVaccines
 
 # Create virtual environment
 python -m venv venv
@@ -238,7 +228,7 @@ print("Installation successful!")
 ### Dataset Collection Methodology
 
 The dataset was collected and curated through:
-1. **Source**: Social media platforms (primarily Twitter)
+1. **Source**: Social media comments from North American online news portals and Facebook pages
 2. **Keywords**: COVID-19, vaccine, vaccination, immunization
 3. **Time period**: 2020-2022 (pandemic period)
 4. **Language**: English
@@ -295,7 +285,7 @@ Format: CSV with UTF-8 encoding
 ### Project Structure
 
 ```
-ConspiracyAgainststCovidVaccines/
+ConspiracyAgaintstCovidVaccines/
 │
 ├── Notebooks/
 │   ├── Bert_Covid_Cons.ipynb              # Main classification pipeline
@@ -1027,7 +1017,7 @@ if __name__ == '__main__':
 
 ### Integration Ideas
 
-1. **Twitter Bot**: Monitor tweets in real-time
+1. **Social Media Monitor**: Monitor public comments in real-time
 2. **Browser Extension**: Flag suspicious content
 3. **Fact-checking Tool**: Support human fact-checkers
 4. **Dashboard**: Visualize conspiracy trends

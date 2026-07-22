@@ -1,5 +1,7 @@
 # Detecting Conspiracy Theory Against COVID-19 Vaccines
 
+**BERT-based COVID-19 vaccine conspiracy detection with a manually labeled dataset, benchmark models, and reproducible notebooks.**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![arXiv](https://img.shields.io/badge/arXiv-2211.13003-b31b1b.svg)](https://arxiv.org/abs/2211.13003)
@@ -7,6 +9,8 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AminHasibul/ConspiracyAgaintstCovidVaccines)
 [![Cited](https://img.shields.io/badge/Citations-External%20Reuse-brightgreen)](https://arxiv.org/abs/2211.13003)
 
+> **Repository name note:** The published GitHub slug remains `ConspiracyAgaintstCovidVaccines` to preserve existing citations, references, and links.
+ 
 > **Paper:** Amin, M. H., Madanu, H., Lavu, S., Mansourifar, H., Alsagheer, D., & Shi, W. (2022).
 > *"Detecting Conspiracy Theory Against COVID-19 Vaccines."* arXiv:2211.13003.
 > University of Houston, Department of Computer Science.
@@ -15,8 +19,8 @@
 
 ## Overview
 
-This repository provides a **manually labeled dataset and NLP classification pipeline** for detecting
-conspiracy theories related to COVID-19 vaccines in social media text.
+This repository provides a **manually labeled dataset, benchmark models, and NLP classification pipeline**
+for detecting conspiracy theories related to COVID-19 vaccines in social-media comments.
 
 With vaccine hesitancy driven by online misinformation remaining a global public health challenge,
 this work provides researchers, platform moderators, and policymakers with tools to study and
@@ -122,16 +126,15 @@ ds = load_dataset("AminHasibul/covid-vaccine-conspiracy")
 git clone https://github.com/AminHasibul/ConspiracyAgaintstCovidVaccines.git
 cd ConspiracyAgaintstCovidVaccines
 
-# Install dependencies (modern HuggingFace stack)
-pip install transformers datasets torch pandas scikit-learn matplotlib seaborn
+# Install the pinned notebook environment
+pip install -r requirements.txt
 
 # Open notebook
 jupyter notebook Bert_Covid_Cons.ipynb
 ```
 
-> **Note on dependencies:** The original paper used `bert-as-service` with TensorFlow 1.x.
-> For reproducibility with modern tooling, we recommend using `transformers` (HuggingFace).
-> The Hugging Face dataset card provides updated training code compatible with Python 3.8+.
+> **Environment note:** `requirements.txt` pins the original notebook dependencies, including the
+> TensorFlow 1.x and `bert-as-service` stack used in this repository.
 
 ---
 
@@ -141,6 +144,7 @@ jupyter notebook Bert_Covid_Cons.ipynb
 ConspiracyAgaintstCovidVaccines/
 ├── README.md                        # This file
 ├── DOCUMENTATION.md                 # Extended methodology documentation
+├── requirements.txt                 # Pinned notebook environment
 ├── LICENSE                          # MIT License
 ├── Bert_Covid_Cons.ipynb           # BERT classification and evaluation pipeline
 ├── Data_analysis_using_BERT.ipynb  # EDA, word frequency, embedding visualization
